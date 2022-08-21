@@ -1,4 +1,5 @@
 #Credit to https://colab.research.google.com/github/google/eng-edu/blob/main/ml/cc/exercises/multi-class_classification_with_MNIST.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=multiclass_tf2-colab&hl=en#scrollTo=QF0BFRXTOeR3
+#https://thecleverprogrammer.com/2022/01/03/stock-price-prediction-with-lstm/
 from random import shuffle
 import numpy as np
 import pandas as pd
