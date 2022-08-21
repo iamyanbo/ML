@@ -1,5 +1,4 @@
 # Dataset from https://www.kaggle.com/datasets/ashishguptajiit/handwritten-az?resource=download
-#Note: this dataset is not included in the repo as it exceeds github's file size limit, but can be downloaded from the above link, simply add it to the folder after downloading the repo.
 #Credit to https://colab.research.google.com/github/google/eng-edu/blob/main/ml/cc/exercises/multi-class_classification_with_MNIST.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=multiclass_tf2-colab&hl=en#scrollTo=QF0BFRXTOeR3
 import numpy as np
 import pandas as pd
