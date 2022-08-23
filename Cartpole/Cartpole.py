@@ -9,8 +9,6 @@ from keras.models import Model, load_model
 from keras.layers import Dense, Input
 from keras.optimizers import Adam, RMSprop
 
-env = gym.make("CartPole-v1")
-
 def create_model(input_shape, action_space):
     """Create Deep Q learning model"""
     X_input = Input(input_shape)
@@ -85,7 +83,7 @@ class DQNAgent:
             rewards.append(sample[i][2])
             next_state[i] = sample[i][3]
             done.append(sample[i][4])
-        
+            
         # Calculate the target Q values
         target = self.model.predict(state)
         target_next = self.model.predict(next_state)
@@ -113,7 +111,6 @@ class DQNAgent:
     def run(self):
         for eps in range(self.EPISODES):
             state = self.env.reset()
-            print(state.shape)
             state = np.reshape(state, [1, self.state_size])
             done = False
             i = 0
