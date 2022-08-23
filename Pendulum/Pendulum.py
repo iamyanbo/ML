@@ -41,7 +41,8 @@ class DQNAgent:
         self.gamma = 0.99    # discount rate
         self.epsilon = 1.0  # exploration rate
         self.epsilon_min = 0.001
-        self.epsilon_decay = 0.9999
+        self.epsilon_decay = 0.9999 # Note this decay is set really high to encourage exploration, from what I noticed, having 0.999 was not enough to encourage the model to add torque
+        # This high decay will also affect how long it will take to train the model
         self.batch_size = 64
         self.train_start = 1000
         
